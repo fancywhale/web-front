@@ -1,0 +1,20 @@
+@import './palette';
+@import './home/index';
+@import './vendors';
+
+html, body {
+  margin: 0px;
+  font-family: "Hiragino Sans GB", 华文细黑, STHeiti, 微软雅黑, "Microsoft YaHei", SimHei, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  color: rgb(72, 72, 72);
+  background-color: rgb(255, 255, 255);
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  display: block;
+  width: 1032px;
+  padding: 34px;
+  margin: 0px auto;
+}

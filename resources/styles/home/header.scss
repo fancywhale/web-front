@@ -1,0 +1,59 @@
+div#header {
+  padding-top: 64px;
+  header.container {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 64px;
+    display: table;
+    position: fixed;
+    background: #fff;
+    z-index: 1;
+    &.hover {
+      border-bottom: solid 1px #ccc;
+    }
+    & > div {
+      display: table-cell;
+    }
+    .logo {
+      vertical-align: middle;
+      padding: 15px 24px;
+      svg {
+        font-size: 34px;
+        color: map-get($colors, primary);
+      }
+    }
+    .center{
+      width: 100%;
+    }
+    .menu {
+      nav {
+        ul {
+          list-style: none;
+          display: table;
+          height: 61px;
+          margin: 0px;
+          & > li {
+            display: table-cell;
+            button{
+              padding: 0px 16px;
+              white-space: nowrap;
+              border: none;
+              height: 100%;
+              line-height: 1;
+              background-color: transparent;
+              display: block;
+              cursor: pointer;
+              font-size: 14px;
+              color: inherit;
+              span {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
