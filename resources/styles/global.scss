@@ -1,0 +1,134 @@
+body.app {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  & > main {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 65px;
+    bottom: 0px;
+  }
+}
+
+body > main.fixed {
+  display: block;
+  width: 1032px;
+  padding: 34px;
+  margin: 0px auto;
+}
+
+div.list {
+  margin-bottom: 40px;
+  padding: 0px 8px;
+  & > .list-header {
+    font-size: 22px;
+    line-height: 28px !important;
+    letter-spacing: -0.2px !important;
+    color: #484848 !important;
+    font-weight: 700 !important;
+  }
+  div.list-item-container{
+    margin-left: -8px;
+    margin-right: -8px;
+    & > .list-item {
+      width: 33.333333333333333%;
+      display: inline-block;
+      margin-bottom: 30px;
+      .list-item-inner {
+        padding: 0px 8px;
+        & > .img-holder {
+          height: 220px;
+          overflow: hidden;
+          & > div {
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size:cover;
+          }
+        }
+        & > .info {
+          padding-top: 8px;
+          line-height: 1.43;
+          font-size: 15px;
+          color: #484848 !important;
+          & > .main-info {
+            font-weight: 700 !important;
+            .fa-map-marker {
+              font-size: 20px;
+              margin-right: 3px;
+              position: relative;
+              top: 1px;
+              color: map-get($colors, primary);
+            }
+          }
+          & .sub-info {
+            font-weight: 300;
+          }
+          & .third-info {
+            font-size: 12px;
+            font-weight: 300;
+            span.money {
+              color: map-get($colors, accent);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+button {
+  span.fa.fa-caret-down {
+    margin-left: 8px;
+  }
+}
+
+*[color=primary] {
+  color: map-get($colors, primary);
+}
+
+*[color=accent] {
+  color: map-get($colors, accent);
+}
+
+*[color=warn] {
+  color: map-get($colors, warn);
+}
+
+.avatar {
+  text-align: center;
+  display: inline-block;
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0px;
+    position: relative;
+    margin-top: 5px;
+  }
+}
+
+h6.row-title {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.palette {
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: inline-block;
+  &:last-child{
+    margin-right: 0px;
+  }
+}

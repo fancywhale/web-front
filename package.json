@@ -1,13 +1,13 @@
 {
-  "name": "loon-boilerplate",
+  "name": "zainarne-web",
   "version": "0.0.1",
   "description": "🌟  An loon framework boilerplate",
   "main": "index.js",
   "scripts": {
     "test": "npm test",
-    "dev": "npm run dev:start & npm run dev:tsc",
     "dev:start": "nodemon -e hbs,js,ejs index.js",
-    "dev:tsc": "tsc -w -p ."
+    "dev:tsc": "gulp start",
+    "start": "npm-run-all --parallel dev:start dev:tsc"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,10 @@
   "homepage": "https://github.com/loon-project/loon-boilerplate#readme",
   "dependencies": {
     "asap": "^2.0.5",
+    "bootstrap": "^3.3.7",
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
     "lodash": "^4.17.4",
     "loon": "^1.1.2",
     "loon-data": "^0.2.0",
@@ -39,17 +43,22 @@
   "devDependencies": {
     "@types/chai": "^3.5.2",
     "@types/express": "^4.0.35",
+    "@types/jquery": "^3.2.5",
     "@types/mocha": "^2.2.41",
     "@types/winston": "^2.3.2",
     "chai": "^3.5.0",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-import-css": "^0.1.3",
+    "gulp-main-npm-files": "^1.0.5",
     "gulp-sass": "^3.1.0",
     "gulp-tsc": "^1.3.2",
     "gulp-typescript": "^3.1.7",
     "gulpclass": "^0.1.2",
     "mocha": "^3.4.1",
     "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.2",
     "ts-node": "^3.0.4",
     "typescript": "^2.3.2"
   }

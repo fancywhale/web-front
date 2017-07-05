@@ -1,0 +1,13 @@
+.item-page {
+  .get-item-cmp {
+    padding: 15px;
+    border: solid 1px map-get($colors, border);
+    .icon-holder {
+      line-height: 70px;
+    }
+  }
+  .found-info {
+    font-size: 13px;
+    color: map-get($colors, sub-font);
+  }
+}

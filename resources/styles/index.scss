@@ -1,6 +1,11 @@
 @import './palette';
 @import './home/index';
+@import './search/index';
+@import './item/index';
+
 @import './vendors';
+@import './global';
+@import './shared/index';
 
 html, body {
   margin: 0px;
@@ -10,11 +15,4 @@ html, body {
   color: rgb(72, 72, 72);
   background-color: rgb(255, 255, 255);
   -webkit-font-smoothing: antialiased;
-}
-
-main {
-  display: block;
-  width: 1032px;
-  padding: 34px;
-  margin: 0px auto;
 }

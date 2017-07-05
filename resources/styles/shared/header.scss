@@ -1,6 +1,6 @@
 div#header {
   padding-top: 64px;
-  header.container {
+  & > header {
     top: 0px;
     left: 0px;
     width: 100%;
@@ -56,4 +56,13 @@ div#header {
   }
 }
 
-
+body.app {
+  div#header {
+    & > header {
+      border-bottom: solid 1px map-get($colors, border);
+      .logo {
+        border-right: solid 1px map-get($colors, border);
+      }
+    }
+  }
+}

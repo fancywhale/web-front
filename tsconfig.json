@@ -1,14 +1,21 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "lib": ["dom", "es7"],
-    "types": ["reflect-metadata"],
+    "lib": [
+      "dom", 
+      "es7"
+    ],
+    "types": [
+      "reflect-metadata", 
+      "jquery"
+    ],
     "module": "commonjs",
     "moduleResolution": "node",
     "experimentalDecorators":true,
     "emitDecoratorMetadata": true,
     "sourceMap": true,
-    "declaration": false
+    "declaration": false,
+    "allowJs": true
   },
   "exclude": [
     "node_modules",

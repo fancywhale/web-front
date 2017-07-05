@@ -1,0 +1,34 @@
+.item-page {
+  
+  .info-header {
+    margin-bottom: -15px;
+    h5 {
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .sub {
+      font-size: 13px;
+      color: map-get($colors, sub-font);
+    }
+  }
+  div.gallery {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+    & > .carousel {
+      height: 100%;
+      overflow: hidden;
+      img {
+        min-height: 100%;
+      }
+    }
+  }
+  .map-container {
+    width: 100%;
+    height: 300px;
+    div#map {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

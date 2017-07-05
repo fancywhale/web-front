@@ -1,0 +1,56 @@
+.search-page {
+  .search-pannel {
+    background: #fff;
+    border-bottom: solid 1px map-get($colors, border);
+    .search-item {
+      display: inline-block;
+      border-right: solid 1px map-get($colors, border);
+      padding: 5px 16px;
+      color: #484848 !important;
+      font-size: 14px;
+      &.date {
+        .date-holder {
+          width: 78px;
+          float: left;
+        }
+        .icon-holder {
+          margin: 0px 5px;
+          line-height: 38px;
+        }
+        svg {
+          vertical-align: middle;
+          fill: #484848;
+          height: 24px;
+          width: 24px;
+        }
+      }
+      &.location {
+      }
+      &.item-type {
+      }
+      & > div {
+        display: inline-block;
+        input[type=text] {
+          background-color: transparent;
+          border: hidden;
+          line-height: 22px;
+          letter-spacing: -0.5px;
+          padding: 8px 0px;
+
+          &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder{
+            font-size: 14px;
+          }
+        }
+      }
+
+      button {
+        padding: 0px;
+        background-color: transparent;
+        border: none;
+        font-size: 14px;
+        line-height: 38px;
+        font-weight: normal;
+      }
+    }
+  }
+}

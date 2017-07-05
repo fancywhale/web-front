@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    title 在那儿呢 - 失物招领平台
+    link(rel="stylesheet",href="./styles/index.css")
+    script(src="http://api.map.baidu.com/api?v=2.0&ak=zgxxc54yRqlHYbh41UQSen3caLggkHys")
+  body.app
+    include ../shared/header.pug
+    main.search-page
+      include panel
+      include content
+
+    include ../shared/login.pug
+
+  script(src="./scripts/vendors.js")
+  script(src="./scripts/main.js")
+  script(src="./scripts/search/search.js")
+  script(type="text/javascript").
+    var map = new BMap.Map("map");    // 创建Map实例
+    map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+    map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+    map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+
+    var headerContainer = document
+      .getElementById('header')
+      .getElementsByTagName('header')[0];
+
+    window.addEventListener('scroll', function () {
+      if(window.scrollY === 0){
+        headerContainer.classList.remove('hover');
+      } else {
+        headerContainer.classList.add('hover');
+      }
+    });

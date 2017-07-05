@@ -1,0 +1,69 @@
+.search-page {
+  
+  .main-container {
+    position: absolute;
+    top: 49px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+    .left-container {
+      padding-left: 10px;
+      padding-right: 10px;
+      position: absolute;
+      left: 0px;
+      right: 33.333333%;
+      top: 0px;
+      bottom: 0px;
+      padding-top: 30px;
+      overflow: auto;
+      .side-header {
+        line-height: 34px;
+        padding: 8px;
+        margin-bottom: 30px;
+        color: #767676 !important;
+        font-size: 15px;
+        .left-content {
+          width: 50%;
+          display: inline-block;
+        }
+        .right-content {
+          width: 50%;
+          display: inline-block;
+          text-align: right;
+          .fa-hand-rock-o {
+            width: 32px;
+            border-radius: 50%;
+            border: solid 1px map-get($colors, accent);
+            color: map-get($colors, accent);
+            font-size: 23px;
+            height: 32px;
+            text-align: center;
+            line-height: 32px;
+            margin-left: 10px;
+            cursor: pointer;
+            &:hover {
+              color: #fff;
+              background: map-get($colors, accent);
+            }
+          }
+        }
+      }
+    }
+    .right-container {
+      position: absolute;
+      right: 0px;
+      width: 33.333333%;
+      top: 0px;
+      bottom: 0px;
+      div.map-container {
+        height: 100%;
+        width: 100%;
+        div#map {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
