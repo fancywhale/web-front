@@ -1,4 +1,11 @@
 .home {
+  .nav-holder {
+    font-size: 24px;
+    a > h3 {
+      display: inline-block;
+      color: map-get($colors, primary);
+    }
+  }
   .search-form {
     border: 1px solid #dce0e0;
     border-radius: 4px;
@@ -7,23 +14,26 @@
     margin-right: 0;
     display: table;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-bottom: 60px;
     .search-item {
       display: table-cell;
       border-left: solid 1px #dce0e0;
       padding: 15px 16px 8px 16px;
+      & > div {
+        color: map-get($colors, sub-font);
+      }
       &.date {
-        width: 35%;
+        font-size: 19px;
+        #dateRange {
+          line-height: 38px;
+        }
         .date-holder {
           width: 78px;
           float: left;
         }
         .icon-holder {
-          width: 34px;
-          float: left;
-          line-height: 38px;
-          text-align: center;
+          margin: 0px 5px;
         }
         svg {
           vertical-align: middle;
@@ -39,7 +49,7 @@
         width: 17%;
         button {
           background-color: transparent;
-          border: none;
+          border: hidden;
           font-size: 19px;
           line-height: 22px;
           font-weight: normal;
@@ -54,7 +64,7 @@
         vertical-align: middle;
         button {
           background-color: map-get($colors, primary);
-          border: none;
+          border: hidden;
           color: #fff;
           padding: 16px 10px;
           font-size: 18px;
@@ -78,7 +88,7 @@
 
           &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder{
             font-size: 19px;
-
+            color: map-get($colors, sub-font);
           }
         }
       }

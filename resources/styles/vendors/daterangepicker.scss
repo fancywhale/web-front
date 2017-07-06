@@ -1,0 +1,13 @@
+@import "../../../node_modules/bootstrap-daterangepicker/daterangepicker.scss";
+
+.daterangepicker {
+  td.active, td.active:hover {
+    background-color: map-get($colors, primary);
+  }
+  .input-mini.active {
+    border-color: map-get($colors, primary);
+  }
+  .daterangepicker_input i {
+    color: map-get($colors, primary);
+  }
+} 

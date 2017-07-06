@@ -1,3 +1,11 @@
+div.nav-holder
+  a(href="report-lost")
+    h3
+      | 我要挂失物品
+  |  / 
+  a(href="report-found")
+    h3
+      | 我要归还物品
 div.search-form
   div.search-item.location
     label 地点
@@ -5,19 +13,28 @@ div.search-form
       input(type="text" placeholder="建筑物，街道，交通设施" clear)
   div.search-item.date
     label 时间
-    div
-      div.date-holder
-        input(type="text" placeholder="开始时间" clear)
-      div.icon-holder
-        svg(viewBox="0 0 1000 1000" data-reactid="37")
-          path(d="M694.4 242.4l249.1 249.1c11 11 11 21 0 32L694.4 772.7c-5 5-10 7-16 7s-11-2-16-7c-11-11-11-21 0-32l210.1-210.1H67.1c-13 0-23-10-23-23s10-23 23-23h805.4L662.4 274.5c-21-21.1 11-53.1 32-32.1z" data-reactid="38")
-      div.date-holder
-        input(type="text" placeholder="结束时间" clear)
+    div.dropdown
+      button#dateRange(clear)
+        span#startDate 开始时间
+        span.icon-holder
+          svg(viewBox="0 0 1000 1000" data-reactid="37")
+            path(d="M694.4 242.4l249.1 249.1c11 11 11 21 0 32L694.4 772.7c-5 5-10 7-16 7s-11-2-16-7c-11-11-11-21 0-32l210.1-210.1H67.1c-13 0-23-10-23-23s10-23 23-23h805.4L662.4 274.5c-21-21.1 11-53.1 32-32.1z" data-reactid="38")
+        span#endDate 结束时间
+        span.fa.fa-caret-down
+          
   div.search-item.item-type
     label 物品种类
-    div
-      button 证件
-        span
+    div.dropdown
+      button(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+        | 证件
+        span.fa.fa-caret-down
+      ul.dropdown-menu(aria-labelledby="dLabel")
+        li
+          a 手机
+        li
+          a 手提包/背包
+        li
+          a 钱包
   
   div.search-item.search
     a(href="/search")

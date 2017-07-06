@@ -35,12 +35,12 @@ div#header {
           margin: 0px;
           & > li {
             display: table-cell;
-            button{
+            a, button{
               padding: 0px 16px;
               white-space: nowrap;
               border: none;
               height: 100%;
-              line-height: 1;
+              line-height: 61px;
               background-color: transparent;
               display: block;
               cursor: pointer;

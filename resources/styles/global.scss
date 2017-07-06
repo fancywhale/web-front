@@ -132,3 +132,23 @@ h6.row-title {
     margin-right: 0px;
   }
 }
+
+input {
+  outline: none;
+}
+
+button {
+  outline: none;
+  &[clear] {
+    background: transparent;
+    border: hidden;
+    padding: 0px;
+  }
+}
+
+.dropdown.open {
+  button {
+    border-bottom: solid 1px map-get($colors, primary) !important;
+    margin-bottom: -1px;
+  }
+}

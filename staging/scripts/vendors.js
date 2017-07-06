@@ -3,4 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const $ = require("jquery");
 window['$'] = $;
 window['jQuery'] = $;
+const moment = require("moment");
+require("moment/locale/zh-cn");
+window['moment'] = moment;
 require("bootstrap-sass");
+require("bootstrap-daterangepicker");

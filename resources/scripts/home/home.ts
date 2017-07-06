@@ -1,4 +1,5 @@
-declare const BMap;
+declare const dateFormat;
+declare const moment;
 
 var map = new BMap.Map("map");    // 创建Map实例
 map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
@@ -28,4 +29,17 @@ window.addEventListener('scroll', function () {
   } else {
     headerContainer.classList.add('hover');
   }
+});
+
+
+$('button#dateRange')['daterangepicker']({
+  locale: {
+    applyLabel: '确定',
+    cancelLabel: '取消'
+  }
+}, function(startDate, endDate) {
+  let startDateStr = startDate.format(dateFormat);
+  let endDateStr = endDate.format(dateFormat);
+  $('#startDate').text(startDateStr);
+  $('#endDate').text(endDateStr);  
 });

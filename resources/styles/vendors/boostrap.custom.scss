@@ -5,7 +5,7 @@
  */
 
 // Core variables and mixins
-@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "_variables";
 
 // overide variables
 $brand-success:         map-get($colors, primary) !default;
@@ -79,5 +79,37 @@ $brand-danger:          map-get($colors, warn) !default;
     padding: 9px 27px;
     font-size: 17px;
     font-weight: 700;    
+  }
+}
+
+.dropdown-menu {
+  transform: translateY(15px);
+  &::before {
+    top: -10px;
+    border: 10px solid transparent;
+    border-top: 0;
+    border-bottom-color: rgba(0,0,0,0.1);
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 9px;
+  }
+  &::after{
+    bottom: auto;
+    top: -9px;
+    border: 10px solid transparent;
+    border-top: 0;
+    border-bottom-color: #fff;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 9px;
+  }
+}
+
+ul.dropdown-menu {
+  li {
+    margin: 16px 0px;
+    font-size: 16px;
   }
 }
