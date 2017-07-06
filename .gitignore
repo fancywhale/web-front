@@ -60,3 +60,6 @@ typings/
 src/**/*.js
 src/**/*.js.map
 
+public
+
+staging
