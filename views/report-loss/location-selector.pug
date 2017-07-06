@@ -1,0 +1,26 @@
+div.location-selector
+  div.title
+    h1
+      | 选择丢失的时间范围
+
+  div.lg-form
+    div.form-item.location-type
+      div.dropdown
+        button(clear,data-toggle="dropdown",aria-haspopup="true",aria-expanded="false")
+          | 设施
+          span.fa.fa-caret-down
+        ul.dropdown-menu(aria-labelledby="dLabel")
+          li
+            a 设施
+          li
+            a 地址
+    div.form-item
+      div.dropdown
+        input(type="text",placeholder="请输入丢失的交叉路口或建筑物名...")
+    div.form-item.submit
+      div
+        button(type="button")
+          | 确认
+  
+  div.map-container
+    div#map

@@ -1,0 +1,53 @@
+div.loss-detail
+  div.title
+    h1
+      | 物品详情描述
+  
+  div
+    h6.row-title 颜色
+    div.color-picker-container
+      label.color-picker
+        input(type="checkbox")
+        div.picker-inner
+          span.palette(style="background: #d9534f;")
+          div
+            span 红色
+
+      label.color-picker
+        input(type="checkbox")
+        div.picker-inner
+          span.palette(style="background: #2ca1f4;")
+          div
+            span 蓝色
+
+      label.color-picker
+        input(type="checkbox")
+        div.picker-inner
+          span.palette(style="background: yellow;")
+          div
+            span 黄色
+        
+  hr
+  div
+    h6.row-title
+      | 内部是否有证件 
+      input(type="checkbox",checked,data-toggle="toggle",data-on="有",data-off="无")
+    div.container-fluid
+      div.row
+        span.dropdown.app-form-control
+          button(clear,data-toggle="dropdown",aria-haspopup="true",aria-expanded="false")
+            | 身份证
+            span.fa.fa-caret-down
+          ul.dropdown-menu(aria-labelledby="dLabel")
+            li
+              a 身份证
+            li
+              a 护照
+        input.app-form-control(type="text",placeholder="姓名")
+        input.app-form-control.lng(type="text",placeholder="证件号")
+
+  hr
+
+  div.text-center
+    button.btn.btn-primary.btn-large
+      | 提交

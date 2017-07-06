@@ -1,0 +1,39 @@
+.report-loss-page {
+  .date-selector {
+    .lg-form {
+      .form-item {
+        &.time-type {
+          width: 140px;
+        }
+        &.date {
+          text-align: center;
+
+          #dateRange {
+            line-height: 38px;
+            width: 100%;
+          }
+          .date-inner {
+            display: table;
+            width: 100%;
+            .date-holder {
+              display: table-cell;
+              width: 78px;
+              float: left;
+            }
+            .icon-holder {
+              display: table-cell;
+              width: 24px;
+              margin: 0px 5px;
+              svg {
+                vertical-align: middle;
+                fill: #484848;
+                height: 24px;
+                width: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

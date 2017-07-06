@@ -1,0 +1,21 @@
+div.step-nav-holder
+  div.step-nav(enabled).active
+    span 物品种类
+  div.step-nav(enabled)
+    span 丢失时间
+  div.step-nav(enabled)
+    span 丢失地点
+  div.step-nav(enabled)
+    span 详情
+
+  span.nav-indicator
+
+div.step-holder
+  div.step
+    include type-selector.pug
+  div.step
+    include date-selector.pug
+  div.step
+    include location-selector.pug
+  div.step
+    include loss-detail.pug

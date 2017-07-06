@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    link(rel="stylesheet",href="./styles/index.css")
+    script(src="http://api.map.baidu.com/api?v=2.0&ak=zgxxc54yRqlHYbh41UQSen3caLggkHys")
+  body
+    include ../shared/header.pug
+    main.report-loss-page.fixed
+      include content
+
+  script(src="./scripts/vendors.js")
+  script(src="./scripts/main.js")
+  script(src="./scripts/report-loss/report-loss.js")
+  script(src="./scripts/report-loss/date-selector.js")
+  script(src="./scripts/report-loss/location-selector.js")
+  

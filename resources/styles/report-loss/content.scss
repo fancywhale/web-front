@@ -1,0 +1,43 @@
+
+.report-loss-page {
+  .title {
+    text-align: center;
+  }
+  .step-nav-holder {
+    position: relative;
+    text-align: center;
+    & > div.step-nav {
+      display: inline-block;
+      & > span {
+        padding: 15px;
+        line-height: 32px;
+        text-align: center;
+        min-width: 40px;
+      }
+      &.active {
+        color: map-get($colors, primary);
+      }
+      &[enabled] {
+        span {
+          cursor: pointer;
+        }
+        &.active {
+          span {
+            cursor: default;
+          }
+        }
+      }
+    }
+    span.nav-indicator {
+      position: absolute;
+      bottom: 0px;
+      border-bottom: solid 1px map-get($colors, primary);
+    }
+  }
+  .step-holder {
+    .step {
+      display: none;
+      opacity: 0;
+    }
+  }
+}

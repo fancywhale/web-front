@@ -8,3 +8,7 @@ require("moment/locale/zh-cn");
 window['moment'] = moment;
 require("bootstrap-sass");
 require("bootstrap-daterangepicker");
+const rxjs = require("rxjs");
+require("rxjs/Subject");
+Object.assign(window, rxjs);
+require("bootstrap-toggle");

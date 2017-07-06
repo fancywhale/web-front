@@ -1,0 +1,29 @@
+div.date-selector
+  div.title
+    h1
+      | 选择丢失的时间范围
+
+  div.lg-form
+    div.form-item.time-type
+      div.dropdown
+        button(clear,data-toggle="dropdown",aria-haspopup="true",aria-expanded="false")
+          | 确切时间
+          span.fa.fa-caret-down
+        ul.dropdown-menu(aria-labelledby="dLabel")
+          li
+            a 确切时间
+          li
+            a 大概时间
+    div.form-item.date
+      div
+        button#dateRange(clear)
+          div.date-inner
+            span#startDate 开始时间
+            span.icon-holder
+              svg(viewBox="0 0 1000 1000" data-reactid="37")
+                path(d="M694.4 242.4l249.1 249.1c11 11 11 21 0 32L694.4 772.7c-5 5-10 7-16 7s-11-2-16-7c-11-11-11-21 0-32l210.1-210.1H67.1c-13 0-23-10-23-23s10-23 23-23h805.4L662.4 274.5c-21-21.1 11-53.1 32-32.1z" data-reactid="38")
+            span#endDate 结束时间
+    div.form-item.submit
+      div
+        button(type="button")
+          | 确认
